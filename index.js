@@ -7,5 +7,7 @@ class Block {
     this.data = data;
     this.prevHash = prevHash;
     this.thisHash = sha256(
-    
+      this.index + this.timestamp + this.data + this.prevHash
+    );
+  }
 }
