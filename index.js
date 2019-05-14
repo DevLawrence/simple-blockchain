@@ -6,5 +6,6 @@ class Block {
     this.timestamp = timestamp;
     this.data = data;
     this.prevHash = prevHash;
-   
+    this.thisHash = sha256(
+    
 }
