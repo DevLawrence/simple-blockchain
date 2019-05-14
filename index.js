@@ -20,3 +20,11 @@ const nextBlock = (lastBlock, data) =>
  const createBlockchain = num => {
   const blockchain = [createGenesisBlock()];
   let previousBlock = blockchain[0];
+
+ for (let i = 1; i < num; i += 1) {
+    const blockToAdd = nextBlock(previousBlock, `This is block #${i}`);
+    blockchain.push(blockToAdd);
+    previousBlock = blockToAdd;
+  }
+  console.log(blockchain);
+};
