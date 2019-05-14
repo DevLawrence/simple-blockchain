@@ -13,3 +13,6 @@ class Block {
 }
 
 const createGenesisBlock = () => new Block(0, Date.now(), 'Genesis Block', '0');
+
+const nextBlock = (lastBlock, data) =>
+  new Block(lastBlock.index + 1, Date.now(), data, lastBlock.thisHash);
