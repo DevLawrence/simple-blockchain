@@ -28,3 +28,6 @@ const nextBlock = (lastBlock, data) =>
   }
   console.log(blockchain);
 };
+
+const lengthToCreate = 20;
+createBlockchain(lengthToCreate);
