@@ -11,3 +11,5 @@ class Block {
     );
   }
 }
+
+const createGenesisBlock = () => new Block(0, Date.now(), 'Genesis Block', '0');
